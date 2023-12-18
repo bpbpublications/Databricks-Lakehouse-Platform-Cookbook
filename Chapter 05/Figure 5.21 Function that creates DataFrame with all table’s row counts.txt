@@ -1,0 +1,16 @@
+1.	def GetTableCountsDataFrame():
+2.	    schemasDf = spark.sql('SHOW SCHEMAS')
+3.	    results =[]
+4.	    for schema in schemasDf.collect():
+5.	        tablesDf = spark.sql('show tables from ' + schema['databaseName'])
+6.	        for table in tablesDf.collect():
+7.	            database = table['database']
+8.	            tableName = table['tableName']
+9.	            countSql = 'SELECT COUNT(*) as COUNT FROM `' + database + "`.`" + tableName + '`'  
+10.	            dfCounts = spark.sql(countSql)
+11.	            count = dfCounts.collect()[0]['COUNT']
+12.	            print(database,tableName,count)
+13.	            results.append((database, tableName,count))
+14.	    columns =  ['database', 'tableName', 'rowCount']     
+15.	    df = spark.createDataFrame(results, columns)    
+16.	    return df

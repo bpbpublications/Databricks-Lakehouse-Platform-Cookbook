@@ -1,0 +1,10 @@
+﻿src,dst,weight
+wait,wait,0.5
+wait,order,0.3
+wait,leave,0.2
+order,get,0.8
+order,leave,0.2
+leave,leave,0.9
+leave,wait,0.1
+get,leave,0.8
+get,wait,0.2

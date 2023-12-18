@@ -1,0 +1,26 @@
+{
+    "id": "c1dd974c-8648-4bf0-9b22-586eea0031de",
+    "pipeline_type": "WORKSPACE",
+    "clusters": [
+        {
+            "label": "default",
+            "num_workers": 1
+        }
+    ],
+    "development": false,
+    "continuous": false,
+    "channel": "CURRENT",
+    "photon": false,
+    "libraries": [
+        {
+            "notebook": {
+                "path": "/Shared/Lakehouse Cookbook/Chapter 7/Chapter 7 - Recipe 65 - DLT - SQL - Incremental refinement using DLT with expectations"
+            }
+        }
+    ],
+    "name": "Chapter 7 - Recipe 65 - DLT - SQL - Incremental refinement using DLT with expectations",
+    "edition": "ADVANCED",
+    "storage": "/mnt/lakehousecookbook/bronze/DLT/AlanDesktop/FamouseBrands/EmployeesSilverWithConstraints/",
+    "target": "LakehouseCookbook",
+    "data_sampling": false
+}

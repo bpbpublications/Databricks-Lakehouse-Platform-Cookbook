@@ -1,0 +1,32 @@
+﻿Node,Type,Name,Label
+1,ITSS,ITSS 130,Application Software
+2,ITSS,ITSS 131,Introduction to Object Oriented Programming
+3,ITSS,ITSS 230,Fundamentals of Databases
+4,ITSS,ITSS 232,Web Design
+5,ITSS,ITSS 332,Database Administration
+6,ITSS,ITSS 333,Video Game Programming
+7,ITSS,ITSS 334 ,Web Programming
+8,ITSS,ITSS 337,Business Intelligence
+9,ITSS,ITSS 338,Programming of Mobile Devices
+10,ITSS,ITSS 435,Software Engineering
+11,ITSS,ITSS 438,Capstone I
+12,ITSS,ITSS 439,Capstone II 
+13,ITSC,ITSC 230 ,Information Security and Assurance
+14,ITSI,ITSI 231,Hardware
+15,ITSI,ITSI 331,Networking
+16,ITSI,ITSI 336,Server Administration
+17,ITSC,ITSC 330,Prevention and Protection Strategies in Cybersecurity
+18,ITSC,ITSC 331,Ethical Hacking
+19,ITSC,ITSC 430,Information Security Management
+20,ITSC,ITSC 431,Legal and Ethics
+21,ITSI,ITSI 332,Interconnecting Network Devices
+22,ITSI,ITSI 333,Data Center
+23,ITSI,ITSI 335,Cloud Computing
+24,ITSI,ITSI 432,Routing and Switching
+25,ITSI,ITSI 433,Wireless
+26,ITSM,ITSM 334,Management Information Systems
+27,BACC,BACC 131,Principles of Accounting I 
+28,BACC,BACC 132,Principles of Accounting II
+29,BADM,BADM 136,Microeconomics
+30,BADM,BADM 331,Principles of Management
+31,BADM,BADM 334,Principles of Marketing

@@ -1,0 +1,36 @@
+{
+    "id": "9a75a2df-9f0a-4678-913b-8d1eb03bef5d",
+    "pipeline_type": "WORKSPACE",
+    "clusters": [
+        {
+            "label": "default",
+            "num_workers": 1
+        }
+    ],
+    "development": true,
+    "continuous": false,
+    "channel": "CURRENT",
+    "photon": false,
+    "libraries": [
+        {
+            "notebook": {
+                "path": "/Shared/Lakehouse Cookbook/Chapter 7/Chapter 7 - Recipe 72: Combining tables using DLT"
+            }
+        }
+    ],
+    "name": "Chapter 7 - Recipe 72: Combining tables using DLT",
+    "edition": "ADVANCED",
+    "storage": "/mnt/lakehousecookbook/bronze/DLTStorage/IotSources/LakehouseCookbook/SpeedTestPython7_70",
+    "configuration": {
+        "iot.ingestion.eh.namespace": "LakehouseCookbook",
+        "iot.ingestion.eh.connectstringSecretName": "eventhub-listen-connectionstring",
+        "iot.ingestion.eh.name": "speedtest",
+        "io.ingestion.eh.secretsScopeName": "LakehouseCookbook",
+        "iot.ingestion.spark.maxOffsetsPerTrigger": "50000",
+        "iot.ingestion.spark.startingOffsets": "earliest",
+        "iot.ingestion.spark.failOnDataLoss": "false",
+        "iot.ingestion.kafka.requestTimeout": "60000",
+        "iot.ingestion.kafka.sessionTimeout": "30000"
+    },
+    "data_sampling": false
+}

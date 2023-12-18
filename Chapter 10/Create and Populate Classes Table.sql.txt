@@ -1,0 +1,27 @@
+CREATE SCHEMA IF NOT EXISTS LakehouseCookbook;
+USE LakehouseCookbook;
+CREATE TABLE Classes 
+(
+    ClassId	INT,
+    DepartmentId	STRING,
+    ClassNumber	INT,
+    Classname	STRING,
+    Credits	INT
+);
+
+INSERT INTO Classes (ClassId, DepartmentId, ClassNumber, Classname, Credits) VALUES ('1010', 'CS', '110', 'Intro to Computer Science', '3');
+INSERT INTO Classes (ClassId, DepartmentId, ClassNumber, Classname, Credits) VALUES ('1020', 'CS', '111', 'Data Structures', '3');
+INSERT INTO Classes (ClassId, DepartmentId, ClassNumber, Classname, Credits) VALUES ('1030', 'CS', '210', 'File and Data Structures', '3');
+INSERT INTO Classes (ClassId, DepartmentId, ClassNumber, Classname, Credits) VALUES ('1040', 'CS', '220', 'Discrete Math', '3');
+INSERT INTO Classes (ClassId, DepartmentId, ClassNumber, Classname, Credits) VALUES ('1050', 'CS', '230', 'Software Engineering', '3');
+INSERT INTO Classes (ClassId, DepartmentId, ClassNumber, Classname, Credits) VALUES ('1060', 'CS', '310', 'Principles of Programming Languages', '3');
+INSERT INTO Classes (ClassId, DepartmentId, ClassNumber, Classname, Credits) VALUES ('1070', 'CS', '320', 'Analysis of Algorithms', '3');
+INSERT INTO Classes (ClassId, DepartmentId, ClassNumber, Classname, Credits) VALUES ('1080', 'CS', '350', 'Computer Science Concepts', '3');
+INSERT INTO Classes (ClassId, DepartmentId, ClassNumber, Classname, Credits) VALUES ('1090', 'CS', '410', 'Compiler Construction', '3');
+INSERT INTO Classes (ClassId, DepartmentId, ClassNumber, Classname, Credits) VALUES ('1100', 'CS', '450', 'Operating Systems', '4');
+INSERT INTO Classes (ClassId, DepartmentId, ClassNumber, Classname, Credits) VALUES ('1110', 'CS', '455', 'Computer Architecture', '4');
+INSERT INTO Classes (ClassId, DepartmentId, ClassNumber, Classname, Credits) VALUES ('1120', 'ENGL', '101', 'Composition and Rhetoric', '3');
+INSERT INTO Classes (ClassId, DepartmentId, ClassNumber, Classname, Credits) VALUES ('1130', 'ENGL', '102', 'Composition, Rhetoric, and Research', '3');
+INSERT INTO Classes (ClassId, DepartmentId, ClassNumber, Classname, Credits) VALUES ('1140', 'Math', '155', 'Calculus 1', '4');
+INSERT INTO Classes (ClassId, DepartmentId, ClassNumber, Classname, Credits) VALUES ('1150', 'Math', '156', 'Calculus 2', '4');
+INSERT INTO Classes (ClassId, DepartmentId, ClassNumber, Classname, Credits) VALUES ('1160', 'Stat', '215', 'Probability and Statistics', '3');

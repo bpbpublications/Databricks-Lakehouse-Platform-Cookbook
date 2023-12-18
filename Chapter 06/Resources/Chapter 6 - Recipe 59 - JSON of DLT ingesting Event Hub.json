@@ -1,0 +1,37 @@
+{
+    "id": "42c1ea84-a214-47fa-a59d-4d329f5f230a",
+    "pipeline_type": "WORKSPACE",
+    "clusters": [
+        {
+            "label": "default",
+            "num_workers": 1
+        }
+    ],
+    "development": true,
+    "continuous": false,
+    "channel": "CURRENT",
+    "photon": false,
+    "libraries": [
+        {
+            "notebook": {
+                "path": "/Users/alan.dennis@gmail.com/alan.dennis@gmail.com/Chapter 6 - DLT - Python - Event Hub"
+            }
+        }
+    ],
+    "name": "Event Hub Speed Test to Bronze Table",
+    "edition": "CORE",
+    "storage": "/mnt/lakehousecookbook/bronze/DLTStorage/IotSources/LakehouseCookbook/SpeedTest",
+    "configuration": {
+        "iot.ingestion.eh.namespace": "LakehouseCookbook",
+        "iot.ingestion.eh.connectstringSecretName": "eventhub-listen-connectionstring",
+        "iot.ingestion.eh.name": "speedtest",
+        "io.ingestion.eh.secretsScopeName": "LakehouseCookbook",
+        "iot.ingestion.spark.maxOffsetsPerTrigger": "50000",
+        "iot.ingestion.spark.startingOffsets": "earliest",
+        "iot.ingestion.spark.failOnDataLoss": "false",
+        "iot.ingestion.kafka.requestTimeout": "60000",
+        "iot.ingestion.kafka.sessionTimeout": "30000"
+    },
+    "target": "LakehouseCookbook",
+    "data_sampling": false
+}

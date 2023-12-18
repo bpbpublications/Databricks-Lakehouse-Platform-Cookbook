@@ -1,0 +1,18 @@
+1.	storageAccountName ='lakehousecookbookblob'
+2.	secretScope = "LakehouseCookbook"
+3.	# Get Secrets
+4.	applicationId =dbutils.secrets.get(scope=secretScope,key="applicationId")
+5.	directoryId =dbutils.secrets.get(scope=secretScope,key="directoryId")
+6.	service_credential = dbutils.secrets.get(scope=secretScope,key="serviceCredentialKey")
+7.	# Keys 
+8.	authType = "fs.azure.account.auth.type." + storageAccountName+ ".dfs.core.windows.net"
+9.	oauthProviderType ="fs.azure.account.oauth.provider.type." + storageAccountName+ ".dfs.core.windows.net"
+10.	oauthClientId = "fs.azure.account.oauth2.client.id." + storageAccountName+ ".dfs.core.windows.net"
+11.	oauthSecret= "fs.azure.account.oauth2.client.secret." + storageAccountName+ ".dfs.core.windows.net"
+12.	oauthEndpoint = "fs.azure.account.oauth2.client.endpoint." + storageAccountName+ ".dfs.core.windows.net"
+13.	# Set Spark Config
+14.	spark.conf.set(authType, "OAuth")
+15.	spark.conf.set(oauthProviderType, "org.apache.hadoop.fs.azurebfs.oauth2.ClientCredsTokenProvider")
+16.	spark.conf.set(oauthClientId, applicationId)
+17.	spark.conf.set(oauthSecret, service_credential)
+18.	spark.conf.set(oauthEndpoint, "https://login.microsoftonline.com/" + directoryId + "/oauth2/token")

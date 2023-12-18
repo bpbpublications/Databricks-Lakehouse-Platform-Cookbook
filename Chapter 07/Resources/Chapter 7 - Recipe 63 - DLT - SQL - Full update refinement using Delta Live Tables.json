@@ -1,0 +1,26 @@
+{
+    "id": "2b2a5da1-bc98-4fad-a011-04118d4f0149",
+    "pipeline_type": "WORKSPACE",
+    "clusters": [
+        {
+            "label": "default",
+            "num_workers": 1
+        }
+    ],
+    "development": true,
+    "continuous": false,
+    "channel": "CURRENT",
+    "photon": false,
+    "libraries": [
+        {
+            "notebook": {
+                "path": "/Shared/Lakehouse Cookbook/Chapter 7/Chapter 7 - Recipe 63 - DLT - SQL - Full update refinement using Delta Live Tables"
+            }
+        }
+    ],
+    "name": "Chapter 7 - Recipe 63 - DLT - SQL - Full update refinement using Delta Live Tables",
+    "edition": "ADVANCED",
+    "storage": "/mnt/lakehousecookbook/bronze/DLT/AlanDesktop/FamouseBrands/EmployeesSilver/",
+    "target": "LakehouseCookbook",
+    "data_sampling": false
+}

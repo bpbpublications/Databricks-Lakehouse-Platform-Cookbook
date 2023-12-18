@@ -1,0 +1,26 @@
+{
+    "id": "2100f1f3-ed1d-4ed4-9459-5c3c8a6a07c8",
+    "pipeline_type": "WORKSPACE",
+    "clusters": [
+        {
+            "label": "default",
+            "num_workers": 1
+        }
+    ],
+    "development": false,
+    "continuous": false,
+    "channel": "CURRENT",
+    "photon": false,
+    "libraries": [
+        {
+            "notebook": {
+                "path": "/Shared/Lakehouse Cookbook/Chapter 7/Chapter 7 - Recipe 65 - DLT - SQL - Incremental refinement DLT with stage table and expectations"
+            }
+        }
+    ],
+    "name": "Chapter 7 - Recipe 65 - DLT - SQL - Incremental refinement DLT with stage table and expectations",
+    "edition": "ADVANCED",
+    "storage": "/mnt/lakehousecookbook/bronze/DLT/AlanDesktop/FamouseBrands/EmployeesSilverWithConstraintsAndStage/",
+    "target": "LakehouseCookbook",
+    "data_sampling": false
+}
